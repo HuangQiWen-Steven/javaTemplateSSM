@@ -1,0 +1,26 @@
+# 服务端口号
+server:
+  port: 8888
+# Spring配置
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/java_ssm_professional?serverTimezone=GMT%2b8
+    username: root
+    password: hqw199874
+# Mybaits配置
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/*.xml
+  # 控制台打印sql语句
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+# 文件管理配置
+files:
+  upload:
+    path: /Users/huangqiwen/Desktop/java/template-ssm/src/main/resources/static/upload/
+url: http://b278i5.natappfree.cc/room/
